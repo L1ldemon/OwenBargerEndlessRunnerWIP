@@ -39,11 +39,15 @@ public class PlatformGenerator : MonoBehaviour
     }
     
     private void OnTriggerEnter2D(Collider2D collider)
+    {  
+      if(gameOver.isAlive != false)
       {
+        Debug.Log("Game be functioning :)");
         if (collider.gameObject.CompareTag("Ground"))
         {
           Debug.Log("Platform is ready to be made");
           GenerateNextPlatform();
         }
       }
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformMove : MonoBehaviour
 {
-    [SerializeField] float currentspeed;
+    public float currentspeed;
     // Start is called before the first frame update
     void Start()
     {
