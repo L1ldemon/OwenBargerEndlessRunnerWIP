@@ -10,7 +10,7 @@ public class DestroyPointer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         PointSystem =GetComponent ("GameManager") as pointsystem;
+         PointSystem = GetComponent ("GameManager") as pointsystem;
     }
 
     // Update is called once per frame
@@ -21,7 +21,6 @@ public class DestroyPointer : MonoBehaviour
 
      private void OnCollisionEnter2D (Collision2D collider)
     {  
-      //if(gameOver.isAlive != false)
         {
             Debug.Log("Pointer has spawned");
                 if(collider.gameObject.CompareTag("Player"))

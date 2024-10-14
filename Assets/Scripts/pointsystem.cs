@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class pointsystem : MonoBehaviour
 {
-    //[SerializeField] GameOver gameOver;
     [SerializeField] GameObject pointer;
     [SerializeField] List <GameObject> pointerspawnpoints = new List <GameObject> {};
 
@@ -40,15 +39,12 @@ public class pointsystem : MonoBehaviour
     
     private void OnCollisionEnter2D (Collision2D collider)
     {  
-      //if(gameOver.isAlive != false)
-        {
-            Debug.Log("Pointer has spawned");
-                if(collider.gameObject.CompareTag("Player"))
-                {
-                    Debug.Log("You got a point");
-                    GenerateNextPointer();
-                    Destroy(pointer);
-                }
-        }
+        Debug.Log("Pointer has spawned");
+        if(collider.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("You got a point");
+                GenerateNextPointer();
+                Destroy(pointer);
+            }
     }
 }
