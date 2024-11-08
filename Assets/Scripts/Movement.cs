@@ -29,8 +29,8 @@ public class Movement : MonoBehaviour
     void Update()
     {
 
-        horizontalMove = Input.GetAxisRaw("WALK") * walkForce;
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        horizontalMove = Input.GetAxisRaw("walk");
+        animator.SetFloat("speed", Mathf.Abs(horizontalMove));
 
       if (gameOver.isAlive == true)
      { 
