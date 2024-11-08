@@ -14,6 +14,10 @@ public class Movement : MonoBehaviour
     //a true or false variable that checks the ground
     [SerializeField] bool isGrounded = false;
 
+    [SerializeField] float horizontalMove;
+    
+    public Animator animator;
+    
     private Rigidbody2D rb; 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +28,10 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        horizontalMove = Input.GetAxisRaw("WALK") * walkForce;
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
       if (gameOver.isAlive == true)
      { 
       if (Input.GetKey(KeyCode.D))
@@ -93,5 +101,7 @@ public class Movement : MonoBehaviour
             Destroy(gameObject);
             gameOver.isAlive = false;
           }
+     
+        
       }
 }
