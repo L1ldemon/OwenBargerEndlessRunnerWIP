@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 
 {
     public GameOver gameOver;
-
+    [SerializeField] float force;
 
   //Jumpforce variable
   [SerializeField] int jumpforce;
@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -31,17 +31,26 @@ public class Movement : MonoBehaviour
 
         horizontalMove = Input.GetAxisRaw("walk");
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
+      if (horizontalMove > 0)
+      {
+        animator.SetFloat("speed", -1);
+      }
+      else if (horizontalMove < 0)
+      {
+        animator.SetFloat("speed", 1);
+      }
+
 
       if (gameOver.isAlive == true)
      { 
       if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(Vector3.right);
+            rb.AddForce(Vector3.right * force);
             Debug.Log("Key D has been pressed");
         }
       if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(Vector3.left);
+            rb.AddForce(Vector3.left * force);
             Debug.Log("Key A has been pressed");
         }
       if (Input.GetKey(KeyCode.Space))     
@@ -73,12 +82,12 @@ public class Movement : MonoBehaviour
         }  
       if (Input.GetKey(KeyCode.RightArrow))     
         {
-            rb.AddForce(Vector3.right);
+            rb.AddForce(Vector3.right * force);
             Debug.Log("Key Right Arrow has been pressed");
         }
       if (Input.GetKey(KeyCode.LeftArrow))     
         {
-            rb.AddForce(Vector3.left);
+            rb.AddForce(Vector3.left * force);
             Debug.Log("Key Left Arrow has been pressed");
         }
      }
