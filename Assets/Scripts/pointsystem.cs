@@ -37,7 +37,7 @@ public class pointsystem : MonoBehaviour
      }
     }
     
-    private void OnCollisionEnter2D (Collision2D collider)
+    /*private void OnCollisionEnter2D (Collision2D collider)
     {  
         Debug.Log("Pointer has spawned");
         if(collider.gameObject.CompareTag("Player"))
@@ -46,5 +46,5 @@ public class pointsystem : MonoBehaviour
                 GenerateNextPointer();
                 Destroy(pointer);
             }
-    }
+    }*/
 }

@@ -9,6 +9,7 @@ TagManager:
   - Deathlineforplatforms
   - Platformgenerator
   - point
+  - pointerspwan1
   layers:
   - Default
   - TransparentFX
