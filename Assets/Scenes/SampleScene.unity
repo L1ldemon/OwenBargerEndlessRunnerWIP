@@ -7919,15 +7919,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5417283860616541526, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5417283860616541526, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5417283860616541526, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5417283860616541526, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7940,10 +7940,6 @@ PrefabInstance:
     - target: {fileID: 5417283860616541526, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5610072473923658768, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18077,7 +18073,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!4 &1047626549
 Transform:
   m_ObjectHideFlags: 0
@@ -27831,8 +27827,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 32.26183, y: -13.256691, z: 0}
-    m_Extent: {x: 46.09493, y: 26.101547, z: 0}
+    m_Center: {x: 32.26625, y: -13.256691, z: 0}
+    m_Extent: {x: 46.09395, y: 26.101547, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34816,8 +34812,8 @@ GameObject:
   - component: {fileID: 7617933306208301335}
   - component: {fileID: 7287204629841165475}
   - component: {fileID: 6333294858185629502}
-  - component: {fileID: 7617933306208301336}
   - component: {fileID: 7617933306208301337}
+  - component: {fileID: 7617933306208301338}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -34905,27 +34901,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7617933306208301336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723705133846150185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3be2be1d7f064411b5b2bbcf43918eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointer: {fileID: 4856301328092458823, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
-  pointerspawnpoints:
-  - {fileID: 1418046206}
-  - {fileID: 1409079452}
-  - {fileID: 1928203794}
-  - {fileID: 1025165492}
-  - {fileID: 1963871755}
-  - {fileID: 1961540392}
-  - {fileID: 254284399}
 --- !u!114 &7617933306208301337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34976,6 +34951,21 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &7617933306208301338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723705133846150185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3be2be1d7f064411b5b2bbcf43918eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointer: {fileID: 4856301328092458823, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
+  pointerspawnpoints:
+  - {fileID: 1409079452}
 --- !u!1001 &8572679648165336938
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -36,8 +36,8 @@ public class pointsystem : MonoBehaviour
       GameObject pointerInstantiate = Instantiate(pointer, pos, Quaternion.identity);
      }
     }
-    
-    /*private void OnCollisionEnter2D (Collision2D collider)
+    /*
+    private void OnCollisionEnter2D (Collision2D collider)
     {  
         Debug.Log("Pointer has spawned");
         if(collider.gameObject.CompareTag("Player"))
@@ -46,5 +46,18 @@ public class pointsystem : MonoBehaviour
                 GenerateNextPointer();
                 Destroy(pointer);
             }
-    }*/
+    }   
+
+*/
+
+     private void onTriggerEnter2D (Collider2D collider)
+    {  
+        Debug.Log("Pointer has spawned");
+        if(collider.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("You got a point");
+                GenerateNextPointer();
+                Destroy(pointer);
+            }
+    }
 }
