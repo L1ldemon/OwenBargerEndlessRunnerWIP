@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DestroyPointer : MonoBehaviour
 {
-    private pointsystem PointSystem;
+    private pointsystem pointsystem;
     
     
     // Start is called before the first frame update
     void Start()
     {
-         PointSystem = GetComponent ("GameManager") as pointsystem;
+         pointsystem = GetComponent ("GameManager") as pointsystem;
     }
 
     // Update is called once per frame
@@ -22,13 +22,11 @@ public class DestroyPointer : MonoBehaviour
      private void OnCollisionEnter2D (Collision2D collider)
     {  
         {
-            Debug.Log("Pointer has spawned");
-                if(collider.gameObject.CompareTag("Player"))
-                {
-                    Debug.Log("You got a point");
-                    //PointSystem.GenerateNextPointer();
-                    Destroy(gameObject);
-                }
+            if(collider.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("You got a point");
+                Destroy(gameObject);
+            }
         }
     }
 }
