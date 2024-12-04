@@ -18384,7 +18384,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047626546}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e1669eea4cbfb43b78e47827fa1bf17a, type: 3}
@@ -23510,7 +23510,7 @@ GameObject:
   - component: {fileID: 1418046209}
   - component: {fileID: 1418046208}
   m_Layer: 0
-  m_Name: pointerspawn1
+  m_Name: pointerspawn#1
   m_TagString: pointerspwan1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27951,8 +27951,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 32.26093, y: -13.2593, z: 0}
-    m_Extent: {x: 46.09583, y: 26.1069, z: 0}
+    m_Center: {x: 32.265697, y: -13.2602215, z: 0}
+    m_Extent: {x: 46.0946, y: 26.105078, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34937,6 +34937,7 @@ GameObject:
   - component: {fileID: 7287204629841165475}
   - component: {fileID: 6333294858185629502}
   - component: {fileID: 7617933306208301337}
+  - component: {fileID: 7617933306208301338}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -35074,6 +35075,22 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &7617933306208301338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723705133846150185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1084d9979363847cda2ec917ebece5be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 0
+  medium: 0
+  hard: 0
+  insane: 0
 --- !u!1001 &8572679648165336938
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ public class Movement : MonoBehaviour
 {
     public GameOver gameOver;
     [SerializeField] float force;
-
   //Jumpforce variable
   [SerializeField] int jumpforce;
 
