@@ -479,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1084d9979363847cda2ec917ebece5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 5706929150093737979}
   player_spawns:
   - {fileID: 0}
   - {fileID: 0}
@@ -487,4 +488,4 @@ MonoBehaviour:
   easy: 0
   medium: 0
   hard: 0
-  insane: 0
+  insane: 1

@@ -105,7 +105,7 @@ public class Movement : MonoBehaviour
           }
             if(collider.gameObject.CompareTag("DeathLine"))
           {
-            Debug.Log ("Sad Spongebob Music WOMP WOMP XD");
+            Debug.Log("WOMP WOMP");
             Destroy(gameObject);
             gameOver.isAlive = false;
           }

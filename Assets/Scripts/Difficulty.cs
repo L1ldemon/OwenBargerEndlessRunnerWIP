@@ -8,28 +8,28 @@ public class Difficulty : MonoBehaviour
 
     [SerializeField] List <GameObject> player_spawns = new List <GameObject> {};
     
-    [SerializeField] bool easy;
+    [SerializeField] public bool easy;
     
-    [SerializeField] bool medium;
+    [SerializeField] public bool medium;
     
-    [SerializeField] bool hard;
+    [SerializeField] public bool hard;
     
-    [SerializeField] bool insane;
+    [SerializeField] public bool insane;
+
+    private Rigidbody2D rb;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        rb = GetComponent<Rigidbody2D>();
 
-    // Update is called once per frame
-    void Update()
-    {
         if(easy == true)
         {
             medium = false;
             hard = false;
             insane = false;
-            Vector3 position = new Vector3 (Player 0.96.transform.position.x, Player -1.66.transform.position.y, Player 0.transform.position.z);
+            transform.position = new Vector3 (1.2f, -1.66f, 0f);
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Debug.Log("Easy Mode selected");
         }
     if(medium == true)
@@ -37,7 +37,8 @@ public class Difficulty : MonoBehaviour
             easy = false;
             hard = false;
             insane = false;
-            Vector3 position = new Vector3 (Player.transform.position.x, Player.transform.position.y, Player.transform.position.z);
+            transform.position = new Vector3 (1.2f, 141.88f, 0f);
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Debug.Log("Medium Mode selected");
         }
     if(hard == true)
@@ -45,6 +46,8 @@ public class Difficulty : MonoBehaviour
             medium = false;
             easy = false;
             insane = false;
+            transform.position = new Vector3 (-197.57f, 141.88f, 0f);
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Debug.Log("Hard Mode selected");
         }
     if(insane == true)
@@ -52,7 +55,15 @@ public class Difficulty : MonoBehaviour
             medium = false;
             hard = false;
             easy = false;
+            transform.position = new Vector3 (-197.57f, -1.26f, 0f);
+            rb.constraints = RigidbodyConstraints2D.None;
             Debug.Log("Insane Mode selected");
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

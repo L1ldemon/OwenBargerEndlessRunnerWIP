@@ -3047,7 +3047,7 @@ GameObject:
   - component: {fileID: 254284402}
   - component: {fileID: 254284401}
   m_Layer: 0
-  m_Name: pointerspawn#7
+  m_Name: pointerspawn easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17771,7 +17771,7 @@ GameObject:
   - component: {fileID: 1025165495}
   - component: {fileID: 1025165494}
   m_Layer: 0
-  m_Name: pointerspawn#4
+  m_Name: pointerspawn easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22701,7 +22701,7 @@ GameObject:
   - component: {fileID: 1409079455}
   - component: {fileID: 1409079454}
   m_Layer: 0
-  m_Name: pointerspawn#2
+  m_Name: pointerspawn easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23049,7 +23049,7 @@ GameObject:
   - component: {fileID: 1418046209}
   - component: {fileID: 1418046208}
   m_Layer: 0
-  m_Name: pointerspawn#1
+  m_Name: pointerspawn easy
   m_TagString: pointerspwan1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27490,8 +27490,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 32.26215, y: -13.256249, z: 0}
-    m_Extent: {x: 46.09695, y: 26.10445, z: 0}
+    m_Center: {x: 32.265682, y: -13.256691, z: 0}
+    m_Extent: {x: 46.092518, y: 26.101547, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -30773,7 +30773,7 @@ GameObject:
   - component: {fileID: 1928203797}
   - component: {fileID: 1928203796}
   m_Layer: 0
-  m_Name: pointerspawn#3
+  m_Name: pointerspawn easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31503,7 +31503,7 @@ GameObject:
   - component: {fileID: 1961540395}
   - component: {fileID: 1961540394}
   m_Layer: 0
-  m_Name: pointerspawn#6
+  m_Name: pointerspawn easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31638,7 +31638,7 @@ GameObject:
   - component: {fileID: 1963871758}
   - component: {fileID: 1963871757}
   m_Layer: 0
-  m_Name: pointerspawn#5
+  m_Name: pointerspawn easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34493,11 +34493,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 413414250424421155, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.96
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 413414250424421155, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.66
+      value: -1.26
       objectReference: {fileID: 0}
     - target: {fileID: 413414250424421155, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34575,6 +34575,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 5706929150093737979, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
+    - target: {fileID: 7162628872073558499, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
+      propertyPath: insane
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7162628872073558499, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: medium
       value: 1
