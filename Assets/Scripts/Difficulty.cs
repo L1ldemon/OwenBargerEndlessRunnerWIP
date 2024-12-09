@@ -5,8 +5,6 @@ using UnityEngine;
 public class Difficulty : MonoBehaviour
 {
     [SerializeField] GameObject Player;
-
-    [SerializeField] List <GameObject> player_spawns = new List <GameObject> {};
     
     [SerializeField] public bool easy;
     
@@ -15,7 +13,7 @@ public class Difficulty : MonoBehaviour
     [SerializeField] public bool hard;
     
     [SerializeField] public bool insane;
-
+    
     private Rigidbody2D rb;
     
     // Start is called before the first frame update
