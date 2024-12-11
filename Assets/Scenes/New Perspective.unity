@@ -27089,8 +27089,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 32.2663, y: -13.258649, z: 0}
-    m_Extent: {x: 46.095203, y: 26.10865, z: 0}
+    m_Center: {x: 32.264427, y: -13.25885, z: 0}
+    m_Extent: {x: 46.09233, y: 26.10775, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -33932,7 +33932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: easy
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: hard
@@ -33944,8 +33944,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: medium
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8435964297230680591, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
+      propertyPath: pointer
+      value: 
+      objectReference: {fileID: 4856301328092458823, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
     - target: {fileID: 8435964297230680591, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: pointerspawnpoints.Array.data[0]
       value: 
