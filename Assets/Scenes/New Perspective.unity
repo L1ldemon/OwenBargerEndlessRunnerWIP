@@ -7797,10 +7797,6 @@ PrefabInstance:
       propertyPath: Difficulty
       value: 
       objectReference: {fileID: 1047626558}
-    - target: {fileID: 4297029743199645116, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4856301328092458823, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
       propertyPath: m_Name
       value: pointer
@@ -27088,8 +27084,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 32.26283, y: -13.256922, z: 0}
-    m_Extent: {x: 46.09393, y: 26.101778, z: 0}
+    m_Center: {x: 32.26585, y: -13.259172, z: 0}
+    m_Extent: {x: 46.09975, y: 26.104029, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -33935,11 +33931,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: hard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: insane
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: medium
