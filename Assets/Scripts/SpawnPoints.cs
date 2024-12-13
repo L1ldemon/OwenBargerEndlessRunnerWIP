@@ -5,8 +5,8 @@ using UnityEngine;
 public class SpawnPoints : MonoBehaviour
 
 {
-    [SerializeField] List <GameObject> pointerspawnpoints = new List <GameObject> {};
-    [SerializeField] GameObject pointer;
+    [SerializeField] public List <GameObject> pointerspawnpoints = new List <GameObject> {};
+    [SerializeField] public GameObject pointer;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,6 @@ public class SpawnPoints : MonoBehaviour
 
     private void OnCollisionEnter2D (Collision2D collider)
     {  
-        Debug.Log("Pointer has spawned");
         if(collider.gameObject.CompareTag("point"))
             {
                 Debug.Log("You got a point");
@@ -37,6 +36,7 @@ public class SpawnPoints : MonoBehaviour
 
     public void GeneratePointer()
     {
+        Debug.Log("Pointer has spawned");
 
      
      for (var i= 0; i < 1  ; i++)

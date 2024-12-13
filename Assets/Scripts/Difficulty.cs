@@ -6,13 +6,10 @@ public class Difficulty : MonoBehaviour
 {
     [SerializeField] GameObject Player;
     
-    [SerializeField] public bool easy;
-    
-    [SerializeField] public bool medium;
-    
-    [SerializeField] public bool hard;
-    
-    [SerializeField] public bool insane;
+    public bool easy;
+    public bool medium;
+    public bool hard;
+    public bool insane;
     
     private Rigidbody2D rb;
     

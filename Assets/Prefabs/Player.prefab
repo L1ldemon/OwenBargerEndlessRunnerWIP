@@ -201,8 +201,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
-  far clip plane: 20
+  near clip plane: -21
+  far clip plane: 21
   field of view: 60.000004
   orthographic: 1
   orthographic size: 15
@@ -369,7 +369,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  pointer: {fileID: 2418012324238513100, guid: ee6c09ee45e7c4d8982319f2fe676a99, type: 3}
+  pointer: {fileID: 4856301328092458823, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
 --- !u!114 &8057198486388022858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +384,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3610454034184928719}
   easy: 0
-  medium: 0
+  medium: 1
   hard: 0
   insane: 0
