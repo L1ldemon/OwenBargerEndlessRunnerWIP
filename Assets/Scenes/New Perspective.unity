@@ -27716,8 +27716,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 32.261147, y: -13.258972, z: 0}
-    m_Extent: {x: 46.09745, y: 26.103828, z: 0}
+    m_Center: {x: 32.262398, y: -13.256691, z: 0}
+    m_Extent: {x: 46.0952, y: 26.101547, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34812,11 +34812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: hard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: insane
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8435964297230680591, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
       propertyPath: pointerspawnpoints.Array.data[0]
