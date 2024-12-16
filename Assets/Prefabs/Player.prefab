@@ -369,6 +369,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   pointer: {fileID: 4856301328092458823, guid: c721eb95c5e1142168956edf27e0c6ec, type: 3}
 --- !u!114 &8057198486388022858
 MonoBehaviour:
@@ -384,6 +390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3610454034184928719}
   easy: 0
-  medium: 1
+  medium: 0
   hard: 0
-  insane: 0
+  insane: 1
