@@ -16025,6 +16025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 930161191}
+  - component: {fileID: 930161192}
   m_Layer: 0
   m_Name: easy
   m_TagString: Untagged
@@ -16055,6 +16056,56 @@ Transform:
   - {fileID: 463006325}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &930161192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930161190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeIntensityEnabled: 0
+  m_ApplyToSortingLayers: 4b0705c400000000
+  m_LightCookieSprite: {fileID: 21300000, guid: a230d7922958f4cfa83ac42674ee37bb, type: 3}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 6.0625, y: -2.8354492, z: 0}
+    m_Extent: {x: 90.8786, y: 50.76785, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 1
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -83.81409, y: -52.603554, z: 0}
+  - {x: 95.67927, y: -52.603554, z: 0}
+  - {x: 95.937195, y: 46.92891, z: 0}
+  - {x: -83.55616, y: 46.67097, z: 0}
 --- !u!1 &932377127
 GameObject:
   m_ObjectHideFlags: 0
@@ -27607,7 +27658,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1716532952}
   - component: {fileID: 1716532953}
-  - component: {fileID: 1716532954}
   m_Layer: 0
   m_Name: easy background
   m_TagString: Untagged
@@ -27682,56 +27732,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1716532954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716532951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ComponentVersion: 1
-  m_LightType: 1
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 4b0705c400000000
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 32.262398, y: -13.256691, z: 0}
-    m_Extent: {x: 46.0952, y: 26.101547, z: 0}
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -13.826835, y: -38.797115, z: 0}
-  - {x: 78.35676, y: -39.35824, z: 0}
-  - {x: 78.076195, y: 12.704572, z: 0}
-  - {x: -13.826831, y: 12.844857, z: 0}
 --- !u!1 &1717393271
 GameObject:
   m_ObjectHideFlags: 0
@@ -34725,6 +34725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAlive: 0
+  restart: 0
 --- !u!4 &7617933306208301335
 Transform:
   m_ObjectHideFlags: 0
@@ -34806,16 +34807,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
-      propertyPath: easy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
-      propertyPath: hard
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8057198486388022858, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
-      propertyPath: insane
+    - target: {fileID: 8356518904203189434, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
+      propertyPath: m_Intensity
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8435964297230680591, guid: 293438f727f0748308459ff9ef01ec45, type: 3}
