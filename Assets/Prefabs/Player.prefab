@@ -390,6 +390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3610454034184928719}
   easy: 0
-  medium: 0
+  medium: 1
   hard: 0
-  insane: 1
+  insane: 0
