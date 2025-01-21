@@ -16077,7 +16077,7 @@ MonoBehaviour:
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 4b0705c400000000
-  m_LightCookieSprite: {fileID: 21300000, guid: a230d7922958f4cfa83ac42674ee37bb, type: 3}
+  m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
@@ -16090,8 +16090,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 6.062149, y: -2.839201, z: 0}
-    m_Extent: {x: 90.88215, y: 50.765198, z: 0}
+    m_Center: {x: 5.4508476, y: -2.1364002, z: 0}
+    m_Extent: {x: 93.94585, y: 51.532303, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -16102,10 +16102,10 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 1
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -83.81409, y: -52.603554, z: 0}
-  - {x: 95.67927, y: -52.603554, z: 0}
-  - {x: 95.937195, y: 46.92891, z: 0}
-  - {x: -83.55616, y: 46.67097, z: 0}
+  - {x: -87.49528, y: -52.671307, z: 0}
+  - {x: 98.4, y: -52.67131, z: 0}
+  - {x: 98.4, y: 48.3964, z: 0}
+  - {x: -87.49528, y: 48.3964, z: 0}
 --- !u!1 &932377127
 GameObject:
   m_ObjectHideFlags: 0

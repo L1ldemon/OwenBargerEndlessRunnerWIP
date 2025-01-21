@@ -10,21 +10,18 @@ public class Difficulty : MonoBehaviour
     public bool medium;
     public bool hard;
     public bool insane;
-    private Light2D light;
     private Rigidbody2D rb;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        light = GetComponent<Light2D>();
 
         if(easy == true)
         {
             medium = false;
             hard = false;
             insane = false;
-            light = false;
             transform.position = new Vector3 (1.2f, -1.66f, 0f);
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             Debug.Log("Easy Mode selected");
@@ -55,10 +52,6 @@ public class Difficulty : MonoBehaviour
             transform.position = new Vector3 (-197.57f, -1.26f, 0f);
             rb.constraints = RigidbodyConstraints2D.None;
             Debug.Log("Insane Mode selected");
-        }
-    if(light == true)
-        {
-            Debug.Log("No light on player");
         }
     }
 
