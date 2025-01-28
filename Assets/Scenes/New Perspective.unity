@@ -5438,7 +5438,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c68db54c7cbce43c1b9761a07c893dae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88e5011706e4d4a708732ee5e580d918, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26100,7 +26100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c68db54c7cbce43c1b9761a07c893dae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88e5011706e4d4a708732ee5e580d918, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28781,8 +28781,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 5.45105, y: -2.14155, z: 0}
-    m_Extent: {x: 93.95605, y: 51.538048, z: 0}
+    m_Center: {x: 5.4496, y: -2.1383991, z: 0}
+    m_Extent: {x: 93.9507, y: 51.5393, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -32623,7 +32623,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c68db54c7cbce43c1b9761a07c893dae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88e5011706e4d4a708732ee5e580d918, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -54001,7 +54001,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c68db54c7cbce43c1b9761a07c893dae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88e5011706e4d4a708732ee5e580d918, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
