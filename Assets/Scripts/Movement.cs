@@ -6,7 +6,8 @@ public class Movement : MonoBehaviour
 
 {
     public GameOver gameOver;
-    [SerializeField] float force;
+    public float maxSpeed = 7f;
+    public float force;
   //Jumpforce variable
   [SerializeField] int jumpforce;
 
@@ -44,12 +45,16 @@ public class Movement : MonoBehaviour
      { 
       if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(Vector3.right * force);
+            force = 3f;
+            rb.velocity = new Vector3(force * maxSpeed, rb.velocity.y);
+            Vector3 movement = new Vector3(force, 0);
+            rb.AddForce(Vector3.right * maxSpeed);
             Debug.Log("Key D has been pressed");
         }
       if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(Vector3.left * force);
+            force = -3f;
+            rb.AddForce(Vector3.left * maxSpeed);
             Debug.Log("Key A has been pressed");
         }
       if (Input.GetKey(KeyCode.Space))     
@@ -81,12 +86,14 @@ public class Movement : MonoBehaviour
         }  
       if (Input.GetKey(KeyCode.RightArrow))     
         {
-            rb.AddForce(Vector3.right * force);
-            Debug.Log("Key Right Arrow has been pressed");
+            force = 3f;
+            rb.AddForce(Vector3.right * maxSpeed);
+            Debug.Log("Right Arrow Key has been pressed");
         }
       if (Input.GetKey(KeyCode.LeftArrow))     
         {
-            rb.AddForce(Vector3.left * force);
+            force = -3f;
+            rb.AddForce(Vector3.left * maxSpeed);
             Debug.Log("Key Left Arrow has been pressed");
         }
      }

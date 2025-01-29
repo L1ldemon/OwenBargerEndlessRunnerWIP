@@ -344,6 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 0}
+  maxSpeed: 7
   force: 3
   jumpforce: 750
   isGrounded: 0
