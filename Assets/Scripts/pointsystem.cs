@@ -6,6 +6,7 @@ public class pointsystem : MonoBehaviour
 {
     [SerializeField] GameObject pointer;
     [SerializeField] List <GameObject> pointerspawnpoints = new List <GameObject> {};
+    public int count = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -36,27 +37,15 @@ public class pointsystem : MonoBehaviour
       GameObject pointerInstantiate = Instantiate(pointer, pos, Quaternion.identity);
      }
     }
-    /*
-    private void OnCollisionEnter2D (Collision2D collider)
-    {  
-        Debug.Log("Pointer has spawned");
-        if(collider.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("You got a point");
-                GenerateNextPointer();
-                Destroy(pointer);
-            }
-    }   
-*/
 
      private void onTriggerEnter2D (Collider2D collider)
     {  
         Debug.Log("Pointer has spawned");
         if(collider.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("You got a point");
-                GenerateNextPointer();
-                Destroy(pointer);
-            }
+        {
+            
+            GenerateNextPointer();
+            Destroy(pointer);
+        }
     }
 }
