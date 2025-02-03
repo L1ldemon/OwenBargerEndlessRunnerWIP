@@ -16,6 +16,8 @@ public class Movement : MonoBehaviour
 
     [SerializeField] float horizontalMove;
     
+    [SerializeField] bool Moving;
+    
     public Animator animator;
     
     private Rigidbody2D rb; 
@@ -28,7 +30,6 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         horizontalMove = Input.GetAxisRaw("walk");
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
       if (horizontalMove > 0)
@@ -39,27 +40,41 @@ public class Movement : MonoBehaviour
       {
         animator.SetFloat("speed", 1);
       }
+      if (Moving != true)
+      {
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+      }
+      else if (Moving == true)
+      {
+        RigidbodyConstraints2D.FreezePositionX = false;
+      }
 
 
       if (gameOver.isAlive == true)
      { 
-      if (Input.GetKey(KeyCode.D))
+      if (Input.GetKeyDown(KeyCode.D))
         {
             force = 3f;
             rb.velocity = new Vector3(force * maxSpeed, rb.velocity.y);
             Vector3 movement = new Vector3(force, 0);
             rb.AddForce(Vector3.right * maxSpeed);
+            Moving = true;
             Debug.Log("Key D has been pressed");
         }
-      if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.D)|Input.GetKeyUp(KeyCode.A)|Input.GetKeyUp(KeyCode.RightArrow)|Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+          Moving = false;
+        }
+      if (Input.GetKeyDown(KeyCode.A))
         {
             force = -3f;
             rb.velocity = new Vector3(force * maxSpeed, rb.velocity.y);
             Vector3 movement = new Vector3(force, 0);
             rb.AddForce(Vector3.left * maxSpeed);
+            Moving = true;
             Debug.Log("Key A has been pressed");
         }
-      if (Input.GetKey(KeyCode.Space))     
+      if (Input.GetKeyDown(KeyCode.Space))     
         {
             if (isGrounded != false)
             {
@@ -68,7 +83,7 @@ public class Movement : MonoBehaviour
               Debug.Log("Key Space has been pressed");
             }
         }
-      if (Input.GetKey(KeyCode.W))     
+      if (Input.GetKeyDown(KeyCode.W))     
         {
             if (isGrounded != false)
             {
@@ -77,7 +92,7 @@ public class Movement : MonoBehaviour
               Debug.Log("Key W has been pressed");
             }
         }
-      if (Input.GetKey(KeyCode.UpArrow))     
+      if (Input.GetKeyDown(KeyCode.UpArrow))     
         {
             if (isGrounded != false)
             {
@@ -86,20 +101,22 @@ public class Movement : MonoBehaviour
               Debug.Log("Key Up Arrow has been pressed");
             }
         }  
-      if (Input.GetKey(KeyCode.RightArrow))     
+      if (Input.GetKeyDown(KeyCode.RightArrow))     
         {
             force = 3f;
             rb.velocity = new Vector3(force * maxSpeed, rb.velocity.y);
             Vector3 movement = new Vector3(force, 0);
             rb.AddForce(Vector3.right * maxSpeed);
+            Moving = true;
             Debug.Log("Right Arrow Key has been pressed");
         }
-      if (Input.GetKey(KeyCode.LeftArrow))     
+      if (Input.GetKeyDown(KeyCode.LeftArrow))     
         {
             force = -3f;
             rb.velocity = new Vector3(force * maxSpeed, rb.velocity.y);
             Vector3 movement = new Vector3(force, 0);
             rb.AddForce(Vector3.left * maxSpeed);
+            Moving = true;
             Debug.Log("Key Left Arrow has been pressed");
         }
      }
