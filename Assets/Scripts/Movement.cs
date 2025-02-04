@@ -44,6 +44,10 @@ public class Movement : MonoBehaviour
       if (Moving != true)
       {
         rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+        if (difficulty.insane != true)
+        {
+          rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
       }
       else if (Moving == true)
       {
