@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public GameOver gameOver;
     public float maxSpeed = 3f;
     public float force;
+    [SerializeField] Difficulty difficulty;
   //Jumpforce variable
   [SerializeField] int jumpforce;
 
@@ -46,7 +47,11 @@ public class Movement : MonoBehaviour
       }
       else if (Moving == true)
       {
-        RigidbodyConstraints2D.FreezePositionX = false;
+        rb.constraints = RigidbodyConstraints2D.None;
+        if (difficulty.insane != true)
+        {
+          rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
       }
 
 

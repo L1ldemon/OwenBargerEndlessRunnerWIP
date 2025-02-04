@@ -58,9 +58,6 @@ public class Difficulty : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(insane == true)
-        {
-            rb.constraints = RigidbodyConstraints2D.None;
-        }
+        
     }
 }
